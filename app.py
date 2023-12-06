@@ -1,4 +1,4 @@
-from dotenv import find_dotenv, load_dotenv
+
 from transformers import pipeline
 from langchain.chains import LLMChain
 from langchain.llms import OpenAI
@@ -7,8 +7,12 @@ import requests
 import os
 import streamlit as st
 import streamlit.components.v1 as components
+# from dotenv import find_dotenv, load_dotenv
 
-load_dotenv(find_dotenv())
+# load_dotenv(find_dotenv())
+
+    
+
 HUGGING_FACE_API_TOKEN = os.getenv("HUGGING_FACE_API_TOKEN")
 OPEN_AI_API_TOKEN = os.getenv("OPENAI_API_KEY")
 
